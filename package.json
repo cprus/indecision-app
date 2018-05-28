@@ -5,9 +5,9 @@
   "author": "Collin",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
-    "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "postinstall": "webpack -p",
+    "start": "node server.js"
   },
   "dependencies": {
     "babel-cli": "6.24.1",
