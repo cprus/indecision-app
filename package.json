@@ -5,9 +5,10 @@
   "author": "Collin",
   "license": "MIT",
   "scripts": {
-    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "postinstall": "webpack -p",
-    "start": "node server.js"
+    "serve": "live-server public/",
+    "build": "webpack",
+    "dev-server": "webpack-dev-server",
+    "start": "node server/server.js"
   },
   "dependencies": {
     "babel-cli": "6.24.1",
@@ -26,10 +27,7 @@
     "sass-loader": "6.0.6",
     "style-loader": "0.18.2",
     "validator": "8.0.0",
-    "webpack": "^4.9.1",
+    "webpack": "3.1.0",
     "webpack-dev-server": "2.5.1"
-  },
-  "devDependencies": {
-    "webpack-cli": "^2.1.4"
   }
 }
